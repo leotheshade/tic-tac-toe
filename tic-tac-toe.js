@@ -15,4 +15,7 @@ function topLeftClick(){
   topLeftTrack = 1
   turn = "p2"
   }
+  else if(topLeftTrack == 0 && turn == "p1"){
+    
+  }
 }
