@@ -11,6 +11,42 @@ var midRightTrack = 0
 var botLeftTrack = 0
 var botMidTrack = 0
 var botRightTrack = 0
+//track variables end
+var topLeftScore = 0;
+var topMidScore = 0;
+var topRightScore = 0;
+var midLeftScore = 0
+var midMidScore = 0
+var midRightScore = 0
+var botLeftScore = 0
+var botMidScore = 0
+var botRightScore = 0
+//score variables end
+
+//begin win check
+function winCheck(){
+  if(topLeftScore == 1 && topMidScore == 1 && topRightScore == 1 ){
+alert("Player One Wins!")
+  }
+
+  if(midLeftScore == 1 && midMidScore == 1 && midRightScore == 1 ){
+    alert("Player One Wins!")
+  }
+
+  if(botLeftScore == 1 && botMidScore == 1 && botRightScore == 1 ){
+    alert("Player One Wins!")
+  }
+//not done
+  if(topLeftScore == 1 && botMidScore == 1 && botRightScore == 1 ){
+    alert("Player One Wins!")
+  }
+  //not done
+}
+
+}
+
+//end win check
+
 //top left
 function topLeftClick(){
   if(topLeftTrack == 0 && turn == "p1"){
@@ -21,6 +57,7 @@ function topLeftClick(){
   circle.setAttribute("r", 30)
   canvas.appendChild(circle)
   topLeftTrack = 1
+  topLeftScore = 1
   turn = "p2"
   } else if(topLeftTrack == 0 && turn == "p2"){
     var canvas = document.getElementById("game-board")
@@ -42,6 +79,7 @@ function topLeftClick(){
     XTwo.setAttribute("stroke", "black")
     canvas.appendChild(XTwo)
     topLeftTrack = 1
+    topLeftScore = 2
     turn = "p1"
   }
 }
@@ -56,6 +94,9 @@ function topMidClick(){
   circle2.setAttribute("r", 30)
   canvas.appendChild(circle2)
   topMidTrack = 1
+
+  topMidScore = 1
+
   turn = "p2"
 } else if(topMidTrack == 0 && turn == "p2"){
     var canvas = document.getElementById("game-board")
@@ -77,6 +118,7 @@ function topMidClick(){
     XTwo2.setAttribute("stroke", "black")
     canvas.appendChild(XTwo2)
     topMidTrack = 1
+    topMidScore = 2
     turn = "p1"
   }
 }
@@ -91,6 +133,7 @@ function topRightClick(){
   circle3.setAttribute("r", 30)
   canvas.appendChild(circle3)
   topRightTrack = 1
+  topRightScore = 1
   turn = "p2"
 } else if(topRightTrack == 0 && turn == "p2"){
     var canvas = document.getElementById("game-board")
@@ -112,6 +155,7 @@ function topRightClick(){
     XTwo3.setAttribute("stroke", "black")
     canvas.appendChild(XTwo3)
     topRightTrack = 1
+    topRightScore = 2
     turn = "p1"
   }
 }
@@ -126,6 +170,7 @@ function midLeftClick(){
   circle4.setAttribute("r", 30)
   canvas.appendChild(circle4)
   midLeftTrack = 1
+  midLeftScore = 1
   turn = "p2"
 } else if(midLeftTrack == 0 && turn == "p2"){
     var canvas = document.getElementById("game-board")
@@ -147,6 +192,7 @@ function midLeftClick(){
     XTwo4.setAttribute("stroke", "black")
     canvas.appendChild(XTwo4)
     midLeftTrack = 1
+    midLeftScore = 2
     turn = "p1"
   }
 }
@@ -161,6 +207,7 @@ function midMidClick(){
   circle5.setAttribute("r", 30)
   canvas.appendChild(circle5)
   midMidTrack = 1
+  midMidScore = 1
   turn = "p2"
 } else if(midMidTrack == 0 && turn == "p2"){
     var canvas = document.getElementById("game-board")
@@ -182,7 +229,156 @@ function midMidClick(){
     XTwo5.setAttribute("stroke", "black")
     canvas.appendChild(XTwo5)
     midMidTrack = 1
+    midMidScore = 2
     turn = "p1"
   }
 }
 //end midmid
+
+function midRightClick(){
+  if(midRightTrack == 0 && turn == "p1"){
+    var canvas = document.getElementById("game-board")
+  var circle6 = document.createElementNS(namespace, "circle")
+  circle6.setAttribute("cx", 250)
+  circle6.setAttribute("cy", 150)
+  circle6.setAttribute("r", 30)
+  canvas.appendChild(circle6)
+  midRightTrack = 1
+  midRightScore = 1
+  turn = "p2"
+} else if(midRightTrack == 0 && turn == "p2"){
+    var canvas = document.getElementById("game-board")
+    var XOne6 = document.createElementNS(namespace, "line")
+    XOne6.setAttribute("x1", 225)
+    XOne6.setAttribute("y1", 125)
+    XOne6.setAttribute("x2", 275)
+    XOne6.setAttribute("y2", 175)
+    XOne6.setAttribute("stroke-width", 2)
+    XOne6.setAttribute("stroke", "black")
+    canvas.appendChild(XOne6)
+
+    var XTwo6 = document.createElementNS(namespace, "line")
+    XTwo6.setAttribute("x1", 225)
+    XTwo6.setAttribute("y1", 175)
+    XTwo6.setAttribute("x2", 275)
+    XTwo6.setAttribute("y2", 125)
+    XTwo6.setAttribute("stroke-width", 2)
+    XTwo6.setAttribute("stroke", "black")
+    canvas.appendChild(XTwo6)
+    midRightTrack = 1
+    midMidScore = 2
+    turn = "p1"
+  }
+}
+// end midRight
+
+function botLeftClick(){
+  if(botLeftTrack == 0 && turn == "p1"){
+    var canvas = document.getElementById("game-board")
+  var circle7 = document.createElementNS(namespace, "circle")
+  circle7.setAttribute("cx", 50)
+  circle7.setAttribute("cy", 250)
+  circle7.setAttribute("r", 30)
+  canvas.appendChild(circle7)
+  botLeftTrack = 1
+  botLeftScore = 1
+  turn = "p2"
+} else if(botLeftTrack == 0 && turn == "p2"){
+    var canvas = document.getElementById("game-board")
+    var XOne7 = document.createElementNS(namespace, "line")
+    XOne7.setAttribute("x1", 25)
+    XOne7.setAttribute("y1", 225)
+    XOne7.setAttribute("x2", 75)
+    XOne7.setAttribute("y2", 275)
+    XOne7.setAttribute("stroke-width", 2)
+    XOne7.setAttribute("stroke", "black")
+    canvas.appendChild(XOne7)
+
+    var XTwo7 = document.createElementNS(namespace, "line")
+    XTwo7.setAttribute("x1", 25)
+    XTwo7.setAttribute("y1", 275)
+    XTwo7.setAttribute("x2", 75)
+    XTwo7.setAttribute("y2", 225)
+    XTwo7.setAttribute("stroke-width", 2)
+    XTwo7.setAttribute("stroke", "black")
+    canvas.appendChild(XTwo7)
+    botLeftTrack = 1
+    botLeftScore = 2
+    turn = "p1"
+  }
+}
+//end botleft
+
+function botMidClick(){
+  if(botMidTrack == 0 && turn == "p1"){
+    var canvas = document.getElementById("game-board")
+  var circle8 = document.createElementNS(namespace, "circle")
+  circle8.setAttribute("cx", 150)
+  circle8.setAttribute("cy", 250)
+  circle8.setAttribute("r", 30)
+  canvas.appendChild(circle8)
+  botMidTrack = 1
+  botMidScore = 1
+  turn = "p2"
+} else if(botMidTrack == 0 && turn == "p2"){
+    var canvas = document.getElementById("game-board")
+    var XOne8 = document.createElementNS(namespace, "line")
+    XOne8.setAttribute("x1", 125)
+    XOne8.setAttribute("y1", 225)
+    XOne8.setAttribute("x2", 175)
+    XOne8.setAttribute("y2", 275)
+    XOne8.setAttribute("stroke-width", 2)
+    XOne8.setAttribute("stroke", "black")
+    canvas.appendChild(XOne8)
+
+    var XTwo8 = document.createElementNS(namespace, "line")
+    XTwo8.setAttribute("x1", 125)
+    XTwo8.setAttribute("y1", 275)
+    XTwo8.setAttribute("x2", 175)
+    XTwo8.setAttribute("y2", 225)
+    XTwo8.setAttribute("stroke-width", 2)
+    XTwo8.setAttribute("stroke", "black")
+    canvas.appendChild(XTwo8)
+    botMidTrack = 1
+    botMidScore = 2
+    turn = "p1"
+  }
+}
+//end botmid
+
+function botRightClick(){
+  if(botRightTrack == 0 && turn == "p1"){
+    var canvas = document.getElementById("game-board")
+  var circle9 = document.createElementNS(namespace, "circle")
+  circle9.setAttribute("cx", 250)
+  circle9.setAttribute("cy", 250)
+  circle9.setAttribute("r", 30)
+  canvas.appendChild(circle9)
+  botRightTrack = 1
+  botRightScore = 1
+  turn = "p2"
+} else if(botRightTrack == 0 && turn == "p2"){
+    var canvas = document.getElementById("game-board")
+    var XOne9 = document.createElementNS(namespace, "line")
+    XOne9.setAttribute("x1", 225)
+    XOne9.setAttribute("y1", 225)
+    XOne9.setAttribute("x2", 275)
+    XOne9.setAttribute("y2", 275)
+    XOne9.setAttribute("stroke-width", 2)
+    XOne9.setAttribute("stroke", "black")
+    canvas.appendChild(XOne9)
+
+    var XTwo9 = document.createElementNS(namespace, "line")
+    XTwo9.setAttribute("x1", 225)
+    XTwo9.setAttribute("y1", 275)
+    XTwo9.setAttribute("x2", 275)
+    XTwo9.setAttribute("y2", 225)
+    XTwo9.setAttribute("stroke-width", 2)
+    XTwo9.setAttribute("stroke", "black")
+    canvas.appendChild(XTwo9)
+    botRightTrack = 1
+    botRightScore = 2
+    turn = "p1"
+  }
+}
+//end bot right
