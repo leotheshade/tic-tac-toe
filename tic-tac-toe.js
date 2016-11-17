@@ -27,23 +27,210 @@ var botRightScore = 0
 function winCheck(){
   if(topLeftScore == 1 && topMidScore == 1 && topRightScore == 1 ){
 alert("Player One Wins!")
+topLeftTrack = 1;
+ topMidTrack = 1;
+topRightTrack = 1;
+ midLeftTrack = 1
+ midMidTrack = 1
+ midRightTrack = 1
+ botLeftTrack = 1
+ botMidTrack = 1
+ botRightTrack = 1
   }
 
-  if(midLeftScore == 1 && midMidScore == 1 && midRightScore == 1 ){
+  else if(midLeftScore == 1 && midMidScore == 1 && midRightScore == 1 ){
     alert("Player One Wins!")
+    topLeftTrack = 1;
+     topMidTrack = 1;
+    topRightTrack = 1;
+     midLeftTrack = 1
+     midMidTrack = 1
+     midRightTrack = 1
+     botLeftTrack = 1
+     botMidTrack = 1
+     botRightTrack = 1
   }
 
-  if(botLeftScore == 1 && botMidScore == 1 && botRightScore == 1 ){
+else if(botLeftScore == 1 && botMidScore == 1 && botRightScore == 1 ){
     alert("Player One Wins!")
+    topLeftTrack = 1;
+     topMidTrack = 1;
+    topRightTrack = 1;
+     midLeftTrack = 1
+     midMidTrack = 1
+     midRightTrack = 1
+     botLeftTrack = 1
+     botMidTrack = 1
+     botRightTrack = 1
   }
 //not done
-  if(topLeftScore == 1 && botMidScore == 1 && botRightScore == 1 ){
+  else if(topLeftScore == 1 && midLeftScore == 1 && botLeftScore == 1 ){
     alert("Player One Wins!")
+    topLeftTrack = 1;
+     topMidTrack = 1;
+    topRightTrack = 1;
+     midLeftTrack = 1
+     midMidTrack = 1
+     midRightTrack = 1
+     botLeftTrack = 1
+     botMidTrack = 1
+     botRightTrack = 1
   }
+  else if(topMidScore == 1 && midMidScore == 1 && botMidScore == 1 ){
+    alert("Player One Wins!")
+    topLeftTrack = 1;
+     topMidTrack = 1;
+    topRightTrack = 1;
+     midLeftTrack = 1
+     midMidTrack = 1
+     midRightTrack = 1
+     botLeftTrack = 1
+     botMidTrack = 1
+     botRightTrack = 1
+}
+else if(topRightScore == 1 && midRightScore == 1 && botRightScore == 1 ){
+  alert("Player One Wins!")
+  topLeftTrack = 1;
+   topMidTrack = 1;
+  topRightTrack = 1;
+   midLeftTrack = 1
+   midMidTrack = 1
+   midRightTrack = 1
+   botLeftTrack = 1
+   botMidTrack = 1
+   botRightTrack = 1
+}
+else if(topLeftScore == 1 && midMidScore == 1 && botRightScore == 1 ){
+  alert("Player One Wins!")
+  topLeftTrack = 1;
+   topMidTrack = 1;
+  topRightTrack = 1;
+   midLeftTrack = 1
+   midMidTrack = 1
+   midRightTrack = 1
+   botLeftTrack = 1
+   botMidTrack = 1
+   botRightTrack = 1
+}
+else if(topRightScore == 1 && midMidScore == 1 && botLeftScore == 1 ){
+  alert("Player One Wins!")
+  topLeftTrack = 1;
+   topMidTrack = 1;
+  topRightTrack = 1;
+   midLeftTrack = 1
+   midMidTrack = 1
+   midRightTrack = 1
+   botLeftTrack = 1
+   botMidTrack = 1
+   botRightTrack = 1
+}
+//player 2 wins
+
+
+if(topLeftScore == 2 && topMidScore == 2 && topRightScore == 2 ){
+alert("Player Two Wins!")
+topLeftTrack = 1;
+topMidTrack = 1;
+topRightTrack = 1;
+midLeftTrack = 1
+midMidTrack = 1
+midRightTrack = 1
+botLeftTrack = 1
+botMidTrack = 1
+botRightTrack = 1
+}
+
+else if(midLeftScore == 2 && midMidScore == 2 && midRightScore == 2 ){
+  alert("Player Two Wins!")
+  topLeftTrack = 1;
+   topMidTrack = 1;
+  topRightTrack = 1;
+   midLeftTrack = 1
+   midMidTrack = 1
+   midRightTrack = 1
+   botLeftTrack = 1
+   botMidTrack = 1
+   botRightTrack = 1
+}
+
+else if(botLeftScore == 2 && botMidScore == 2 && botRightScore == 2 ){
+  alert("Player Two Wins!")
+  topLeftTrack = 1;
+   topMidTrack = 1;
+  topRightTrack = 1;
+   midLeftTrack = 1
+   midMidTrack = 1
+   midRightTrack = 1
+   botLeftTrack = 1
+   botMidTrack = 1
+   botRightTrack = 1
+}
+//not done
+else if(topLeftScore == 2 && midLeftScore == 2 && botLeftScore == 2 ){
+  alert("Player Two Wins!")
+  topLeftTrack = 1;
+   topMidTrack = 1;
+  topRightTrack = 1;
+   midLeftTrack = 1
+   midMidTrack = 1
+   midRightTrack = 1
+   botLeftTrack = 1
+   botMidTrack = 1
+   botRightTrack = 1
+}
+else if(topMidScore == 2 && midMidScore == 2 && botMidScore == 2 ){
+  alert("Player Two Wins!")
+  topLeftTrack = 1;
+   topMidTrack = 1;
+  topRightTrack = 1;
+   midLeftTrack = 1
+   midMidTrack = 1
+   midRightTrack = 1
+   botLeftTrack = 1
+   botMidTrack = 1
+   botRightTrack = 1
+}
+else if(topRightScore == 2 && midRightScore == 2 && botRightScore == 2 ){
+alert("Player Two Wins!")
+topLeftTrack = 1;
+ topMidTrack = 1;
+topRightTrack = 1;
+ midLeftTrack = 1
+ midMidTrack = 1
+ midRightTrack = 1
+ botLeftTrack = 1
+ botMidTrack = 1
+ botRightTrack = 1
+}
+else if(topLeftScore == 2 && midMidScore == 2 && botRightScore == 2 ){
+alert("Player Two Wins!")
+topLeftTrack = 1;
+ topMidTrack = 1;
+topRightTrack = 1;
+ midLeftTrack = 1
+ midMidTrack = 1
+ midRightTrack = 1
+ botLeftTrack = 1
+ botMidTrack = 1
+ botRightTrack = 1
+}
+else if(topRightScore == 2 && midMidScore == 2 && botLeftScore == 2 ){
+alert("Player Two Wins!")
+topLeftTrack = 1;
+ topMidTrack = 1;
+topRightTrack = 1;
+ midLeftTrack = 1
+ midMidTrack = 1
+ midRightTrack = 1
+ botLeftTrack = 1
+ botMidTrack = 1
+ botRightTrack = 1
+}
+
   //not done
 }
 
-}
+
 
 //end win check
 
@@ -266,7 +453,7 @@ function midRightClick(){
     XTwo6.setAttribute("stroke", "black")
     canvas.appendChild(XTwo6)
     midRightTrack = 1
-    midMidScore = 2
+    midRightScore = 2
     turn = "p1"
   }
 }
